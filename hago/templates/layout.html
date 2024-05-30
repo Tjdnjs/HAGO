@@ -3,11 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>HAGO</title>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./../static/styles.css" />
     <style>
       .filters {
         margin-bottom: 20px;
@@ -19,8 +32,20 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="my-4">HAGO</h1>
+      <div class="heading">
+        <a href="/">
+          <h1 class="my-4 logo">HAGO</h1>
+          <h6 class="logo">Have A Good Outfit</h6>
+        </a>
+      </div>
+
       {% block content %}{% endblock %}
+    </div>
+    <!-- <a href="#" id="scrollToTopBtn" class="scroll-to-top">위로</a> -->
+    <div class="scroll-to-top">
+      <a href="#" id="scrollToTopBtn">
+        <img src="https://cdn-icons-png.flaticon.com/128/3106/3106683.png" />
+      </a>
     </div>
   </body>
 </html>
