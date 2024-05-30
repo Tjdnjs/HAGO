@@ -113,7 +113,7 @@ div.heading {
 .btn-primary {
   background-color: rgb(83, 102, 156);
   border-color: transparent;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   border-radius: 5px;
   font-size: 0.8rem;
   padding: 5px 15px;
