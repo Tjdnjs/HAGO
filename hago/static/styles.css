@@ -15,7 +15,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  transition: background-position 1s ease;
+  transition: 1s;
 }
 
 .heading a,
