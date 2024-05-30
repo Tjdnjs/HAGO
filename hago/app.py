@@ -91,10 +91,6 @@ def index():
 
     return render_template('index.html', products=sorted_products, filter_key=filter_key, filter_value=filter_value, sort_key=sort_key)
 
-@app.route('/product/<int:product_id>')
-def product_detail(product_id):
-    product = next((p for p in products if p['id'] == product_id), None)
-    return render_template('product_detail.html', product=product)
 
 if __name__ == '__main__':
     app.run(debug=True)
